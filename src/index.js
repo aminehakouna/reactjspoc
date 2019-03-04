@@ -1,7 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import 'babel-polyfill';
+import React from 'react'
+import { render } from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
+import App from './components/App';
 
-
-
-
-ReactDOM.render(<p>Hello Amine!</p>, document.getElementById('root'));
+render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+, document.getElementById('root'));
