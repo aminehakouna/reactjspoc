@@ -1,20 +1,21 @@
 import React from 'react';
+// import NavBar from './NavBar';
+import CNavBar from './CNavBar';
 
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class App extends React.Component {
     render() {
         return (
             <div className="container-fluid">
-                <p>App Header</p>
-                {this.props.children}
+                <CNavBar />
             </div>
         );
     }
 }
 
-App.propTypes = {
-    children: PropTypes.object.isRequired
-};
+// App.propTypes = {
+//     children: PropTypes.object.isRequired
+// };
 
 export default App;
